@@ -1,0 +1,12 @@
+{
+  "name": "multi-calendar",
+  "version": "1.0.0",
+  "description": "Outlook.com, Microsoft 365, Google calendars: free time, events, invitations, booking pages, polls.",
+  "mcpServers": {
+    "multi-calendar": {
+      "type": "http",
+      "url": "https://calendar.lumman.co/mcp",
+      "oauth": { "enabled": true }
+    }
+  }
+}

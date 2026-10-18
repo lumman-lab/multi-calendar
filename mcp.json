@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "multi-calendar": {
+      "type": "http",
+      "url": "https://calendar.lumman.co/mcp"
+    }
+  }
+}

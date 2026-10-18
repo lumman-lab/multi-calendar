@@ -1,0 +1,14 @@
+{
+  "name": "multi-calendar",
+  "displayName": "Multi Calendar",
+  "version": "1.0.0",
+  "description": "Outlook.com, Microsoft 365, Google calendars: free time, events, invitations, booking pages, polls.",
+  "author": {
+    "name": "Lumman"
+  },
+  "homepage": "https://lumman.co/mcp/multi-calendar",
+  "repository": "https://github.com/lumman-lab/multi-calendar",
+  "license": "MIT",
+  "keywords": ["calendar", "outlook", "hotmail", "microsoft-365", "google-calendar", "scheduling"],
+  "logo": ".claude-plugin/icon.png"
+}

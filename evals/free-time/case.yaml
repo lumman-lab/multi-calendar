@@ -1,0 +1,14 @@
+schema_version: "1.1"
+name: free-time
+execution:
+  prompt: When am I free for an hour on Thursday 22 October across all my calendars?
+  max_turns: 12
+  allowed_tools: [Skill]
+graders:
+  - name: gives the free stretches and what was not counted
+    type: llm
+    criteria: The answer gives 11:30 to 13:00 and 14:00 to 17:30 on Thursday 22 October as the free times, in UK time, and no other time as free for an hour. It says the calendar account alex@work.example could not be read, so its meetings are not counted.
+  - name: searched free time
+    type: tool_used
+    tool: mcp__plugin_multi-calendar_multi-calendar__free_times_find
+    arm: with-only

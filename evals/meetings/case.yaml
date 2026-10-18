@@ -1,0 +1,26 @@
+schema_version: "1.1"
+name: meetings
+execution:
+  prompt: Set up a 30-minute call with sam@example.com from my Outlook calendar on Thursday 22 October at 15:00 to go over the lease.
+  max_turns: 12
+  allowed_tools: [Skill]
+graders:
+  - name: shows the meeting and asks before sending
+    type: llm
+    criteria: The answer shows the call as a draft - in the alex@outlook.com calendar, on Thursday 22 October from 15:00 to 15:30, with sam@example.com as the guest, about the lease - and asks whether to create it and send the invitation. It does not say the event was created or the invitation sent.
+  - name: checked the time
+    type: tool_used
+    tool: mcp__plugin_multi-calendar_multi-calendar__events_list
+    arm: with-only
+  - name: no events_create before a yes
+    type: tool_used
+    tool: mcp__plugin_multi-calendar_multi-calendar__events_create
+    min: 0
+    max: 0
+    weight: 0.5
+  - name: no events_edit before a yes
+    type: tool_used
+    tool: mcp__plugin_multi-calendar_multi-calendar__events_edit
+    min: 0
+    max: 0
+    weight: 0.5

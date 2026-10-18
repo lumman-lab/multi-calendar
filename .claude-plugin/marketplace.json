@@ -1,0 +1,17 @@
+{
+  "name": "multi-calendar",
+  "owner": {
+    "name": "Lumman",
+    "url": "https://lumman.co"
+  },
+  "metadata": {
+    "description": "The Multi Calendar plugin for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "multi-calendar",
+      "source": "./",
+      "description": "Outlook.com, Microsoft 365, Google calendars: free time, events, invitations, booking pages, polls."
+    }
+  ]
+}

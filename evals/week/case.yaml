@@ -1,0 +1,17 @@
+schema_version: "1.1"
+name: week
+execution:
+  prompt: What's on my calendars the week of Monday 19 October?
+  max_turns: 12
+  allowed_tools: [Skill]
+graders:
+  - name: each meeting once, by day
+    type: llm
+    criteria: The answer lists, day by day, Weekly planning on Monday, Lunch with Priya on Tuesday, Team sync and Dentist on Wednesday, Board prep, Client check-in and Design review on Thursday, and Drinks with the team on Friday - Client check-in once, not twice - and lists no busy block as a meeting of its own.
+  - name: names the clash, the open invitation and the unread account
+    type: llm
+    criteria: The answer says Team sync and Dentist overlap on Wednesday, that Anna's Design review invitation has not been answered, and that the calendar account alex@work.example could not be read.
+  - name: read the week
+    type: tool_used
+    tool: mcp__plugin_multi-calendar_multi-calendar__events_list
+    arm: with-only
