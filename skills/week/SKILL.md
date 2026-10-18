@@ -8,7 +8,7 @@ description: An overview of the week, or of any run of days, across every connec
 This skill reads and changes nothing: it answers no invitation and moves or cancels nothing.
 
 1. Read the week with one `events_list` call across every calendar - from Monday to the Monday after, in the person's time zone - unless the person named other days.
-2. Before answering, read on each calendar named under cutShort, passing its continueAt with its account and calendarId and the same period: the week is not whole until each has been read to its end.
+2. Before answering, read on each calendar named under cutShort, passing its continueAt with its account and calendarId and the same period: the week is not whole until each has been read to its end. Where the answer counts events under leftOut, read the period it names again, a day or a calendar at a time, for the same reason.
 3. Read the answer as it is meant:
    - an event held in several accounts answers once, naming each copy - count it once;
    - Lumman's own busy copies come apart from events, under busyCopies: they mirror busy time from another account, so never list one as a meeting;

@@ -131,11 +131,11 @@ The meetings skill asks the client to show a meeting and wait for your yes. What
 
 To see what the skills add, every case ran in two setups with the connector's tools in place: once with the plugin as shipped, once with its `skills/` folder removed (`claude plugin eval <copy> --ablation none`). Run on 18 October 2026 with Claude Code 2.1.292, model claude-sonnet-5-5 and claude-sonnet-5-5 as the judge (`--judge-model`), three runs per case each way:
 
-- free-time - gives Thursday's two free stretches and names the account it could not read: 3 of 3 with the skills and 3 of 3 without. The skill adds nothing measurable here.
+- free-time - gives Thursday's two free stretches and names the account it could not read: 3 of 3 with the skills, 2 of 3 without.
 - meetings - shows the call as a draft and asks before sending the invitation: 3 of 3 with, 0 of 3 without; without the skills Claude created the event and sent the invitation at once in every run.
 - week - lists each meeting once, day by day, with the clash, the unanswered invitation and the unread account: 3 of 3 with and without. The skill adds nothing measurable here.
 
-Overall score 1.00 with the skills and 0.72 without. Three runs per case is a small sample, and the mocks answer the same whatever Claude changes.
+Overall score 1.00 with the skills and 0.67 without. Three runs per case is a small sample, and the mocks answer the same whatever Claude changes.
 
 ## Security
 
