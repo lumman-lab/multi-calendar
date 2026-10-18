@@ -2,7 +2,7 @@
 
 Outlook.com, Microsoft 365, Google calendars: free time, events, invitations, booking pages, polls.
 
-Multi Calendar is a remote MCP server run by Lumman Ltd, London. It puts every calendar account you connect - Outlook.com and Hotmail, Microsoft 365 and Google, several of each - behind one connector, so an AI client can find time free in all of them in one call, read and change events, answer invitations, and hand out booking links, booking pages and group polls. This repository holds what clients install: the manifests for Claude Code, Cursor and Gemini CLI, three skills and their evals. The server itself is not in it.
+Multi Calendar is a remote MCP server run by Lumman Ltd, London. It puts every calendar account you connect - Outlook.com and Hotmail, Microsoft 365 and Google, several of each - behind one connector, so an AI client can find time free in all of them in one call, read and change events, answer invitations, and hand out booking links, booking pages and group polls. This repository holds what clients install: the manifests for Claude Code, Cursor, Gemini CLI and Antigravity, three skills and their evals. The server itself is not in it.
 
 ## Before you start
 
@@ -55,6 +55,14 @@ gemini extensions install https://github.com/lumman-lab/multi-calendar
 
 The extension adds the connector at https://calendar.lumman.co/mcp and the three skills below. Its first call opens Lumman's sign-in in your browser; `/mcp auth multi-calendar` opens it again.
 
+### Antigravity
+
+```
+agy plugin install https://github.com/lumman-lab/multi-calendar
+```
+
+The plugin adds the connector at https://calendar.lumman.co/mcp and the three skills below, for the Antigravity CLI, app and IDE alike. To sign in, run `/mcp` in the CLI, open `multi-calendar_multi-calendar` and choose Authenticate, or in the app or IDE press Authenticate next to it under Agent settings, Customizations; approve on the Lumman page that opens, then paste the code Antigravity's page shows back into Antigravity.
+
 ### ChatGPT
 
 This needs ChatGPT on the web, in a Business workspace where you are an admin or owner, or an Enterprise or Edu workspace whose role allows creating plugins with MCPs. On Pro it runs read tools alone; Plus and Free cannot add it.
@@ -74,7 +82,7 @@ The connector answers a client's first call with where to sign in. The client re
 
 ## Skills
 
-Claude Code and Gemini CLI load three skills with the connector, and pick one by themselves when a request matches it. In Claude Code each is also a command, such as `/multi-calendar:week`.
+Claude Code, Cursor, Gemini CLI and Antigravity load three skills with the connector, and pick one by themselves when a request matches it. In Claude Code each is also a command, such as `/multi-calendar:week`.
 
 - `free-time` - when you are free across every calendar, within your working hours, or when everyone in one of your circles is, with every calendar it could not read named. Books nothing.
 - `meetings` - a meeting with guests shown to you as a draft, then made and its invitations sent only after you say yes to that draft.

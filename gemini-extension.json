@@ -1,6 +1,6 @@
 {
   "name": "multi-calendar",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Outlook.com, Microsoft 365, Google calendars: free time, events, invitations, booking pages, polls.",
   "mcpServers": {
     "multi-calendar": {
