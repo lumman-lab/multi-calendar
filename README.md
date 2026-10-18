@@ -57,6 +57,8 @@ The extension adds the connector at https://calendar.lumman.co/mcp and the three
 
 ### ChatGPT
 
+This needs ChatGPT on the web, in a Business workspace where you are an admin or owner, or an Enterprise or Edu workspace whose role allows creating plugins with MCPs. On Pro it runs read tools alone; Plus and Free cannot add it.
+
 1. Open chatgpt.com/plugins, press +, then Add custom MCP server.
 2. Name it Multi Calendar, paste `https://calendar.lumman.co/mcp`, choose OAuth, tick the box and press Create as a plugin.
 3. Install it. On the Lumman page, sign in, add a calendar if none is connected, and approve.
