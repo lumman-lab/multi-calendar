@@ -2,7 +2,7 @@
 
 Outlook.com, Microsoft 365, Google calendars: free time, events, invitations, booking pages, polls.
 
-Multi Calendar is a remote MCP server run by Lumman Ltd, London. It puts every calendar account you connect - Outlook.com and Hotmail, Microsoft 365 and Google, several of each - behind one connector, so an AI client can find time free in all of them in one call, read and change events, answer invitations, and hand out booking links, booking pages and group polls. This repository holds what clients install: the manifests for Claude Code, Cursor, Gemini CLI and Antigravity, three skills and their evals. The server itself is not in it.
+Multi Calendar is a remote MCP server run by Lumman Ltd. It puts every calendar account you connect - Outlook.com and Hotmail, Microsoft 365 and Google, several of each - behind one connector, so an AI client can find time free in all of them in one call, read and change events, answer invitations, and hand out booking links, booking pages and group polls. This repository holds what clients install: the manifests for Claude Code, Cursor, Gemini CLI and Antigravity, three skills and their evals. The server itself is not in it.
 
 ## Before you start
 
