@@ -6,7 +6,7 @@ Multi Calendar is a remote MCP server run by Lumman Ltd. It puts every calendar 
 
 ## Before you start
 
-You need a Lumman account with at least one calendar account connected - in the window your AI client opens when it first connects, or at https://lumman.co/mcp/account/multi-calendar. Sign in there with Google, Microsoft, a passkey or an emailed code. Outlook.com, Hotmail and Microsoft 365 calendars connect with Microsoft sign-in, Google calendars with Google sign-in. Each calendar account's permissions - seeing events, changing events, and inviting and replying - are set on the same page, and so are your time zone, working hours and other scheduling preferences.
+You need a Lumman account with at least one calendar account connected - in the window your AI client opens when it first connects, or at https://lumman.co/mcp/account/multi-calendar. Sign in there with Google, Microsoft, a passkey or an emailed code. Outlook.com, Hotmail and Microsoft 365 calendars connect with Microsoft sign-in, Google calendars with Google sign-in. Each calendar account's permissions - seeing events, changing events, and inviting and replying - are set on the same page, and your time zone, working hours and other scheduling preferences on its Scheduling page, https://lumman.co/mcp/account/multi-calendar/scheduling.
 
 ## Add it to your client
 
