@@ -11,7 +11,7 @@
     {
       "name": "multi-calendar",
       "source": "./",
-      "description": "Outlook.com, Microsoft 365, Google calendars: free time, events, invitations, booking pages, polls."
+      "description": "Outlook.com, Microsoft 365, Google, iCloud, CalDAV: free time, events, invites, bookings, polls."
     }
   ]
 }

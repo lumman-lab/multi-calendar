@@ -1,12 +1,12 @@
 # Multi Calendar
 
-Outlook.com, Microsoft 365, Google calendars: free time, events, invitations, booking pages, polls.
+Outlook.com, Microsoft 365, Google, iCloud, CalDAV: free time, events, invites, bookings, polls.
 
-Multi Calendar is a remote MCP server run by Lumman Ltd. It puts every calendar account you connect - Outlook.com and Hotmail, Microsoft 365 and Google, several of each - behind one connector, so an AI client can find time free in all of them in one call, read and change events, answer invitations, and hand out booking links, booking pages and group polls. This repository holds what clients install: the manifests for Claude Code, Cursor, Gemini CLI and Antigravity, three skills and their evals. The server itself is not in it.
+Multi Calendar is a remote MCP server run by Lumman Ltd. It puts every calendar account you connect - Outlook.com and Hotmail, Microsoft 365, Google, iCloud, Fastmail and other CalDAV calendars, several of each - behind one connector, so an AI client can find time free in all of them in one call, read and change events, answer invitations, and hand out booking links, booking pages and group polls. This repository holds what clients install: the manifests for Claude Code, Cursor, Gemini CLI and Antigravity, three skills and their evals. The server itself is not in it.
 
 ## Before you start
 
-You need a Lumman account with at least one calendar account connected - in the window your AI client opens when it first connects, or at https://lumman.co/mcp/account/multi-calendar. Sign in there with Google, Microsoft, a passkey or an emailed code. Outlook.com, Hotmail and Microsoft 365 calendars connect with Microsoft sign-in, Google calendars with Google sign-in. Each calendar account's permissions - seeing events, changing events, and inviting and replying - are set on the same page, and your time zone, working hours and other scheduling preferences on its Scheduling page, https://lumman.co/mcp/account/multi-calendar/scheduling.
+You need a Lumman account with at least one calendar account connected - in the window your AI client opens when it first connects, or at https://lumman.co/mcp/account/multi-calendar. Sign in there with Google, Microsoft, a passkey or an emailed code. Outlook.com, Hotmail and Microsoft 365 calendars connect with Microsoft sign-in, Google calendars with Google sign-in, iCloud calendars with an app-specific password made at Apple, and Fastmail and other CalDAV calendars with their address and a password. Each calendar account's permissions - seeing events, changing events, and inviting and replying - are set on the same page, and your time zone, working hours and other scheduling preferences on its Scheduling page, https://lumman.co/mcp/account/multi-calendar/scheduling.
 
 ## Add it to your client
 
@@ -65,7 +65,7 @@ The plugin adds the connector at https://calendar.lumman.co/mcp and the three sk
 
 ### ChatGPT
 
-This needs ChatGPT on the web, in a Business workspace where you are an admin or owner, or an Enterprise or Edu workspace whose role allows creating plugins with MCPs. On Pro it runs read tools alone; Plus and Free cannot add it.
+Needs ChatGPT Pro, Business, Enterprise or Edu. Plus and Free cannot add it.
 
 1. Open chatgpt.com/plugins, press +, then Add custom MCP server.
 2. Name it Multi Calendar, paste `https://calendar.lumman.co/mcp`, choose OAuth, tick the box and press Create as a plugin.
@@ -93,6 +93,15 @@ Examples:
 - "When am I free for an hour on Thursday across all my calendars?"
 - "Set up a 30-minute call with sam@example.com from my Outlook calendar on Thursday at 15:00."
 - "What's on my calendars this week?"
+
+## Ready requests
+
+The connector offers these requests ready-made; a client shows them as prompts or commands.
+
+- `week_ahead` - The week ahead. Every meeting of the next seven days across all your calendars, with clashes and invitations still to answer.
+- `daily_agenda` - Today's agenda. Today across all your calendars at a glance, made to run as a scheduled task.
+- `answer_invitations` - Invitations to answer. Invitations still waiting for your answer across all your calendars, each answered only as you say.
+- `schedule_meeting` - Set up a meeting. Find a time every calendar has open and send the invitations once you say yes to the draft.
 
 ## Tools
 
@@ -122,7 +131,7 @@ Examples:
 
 ## Where your calendars go
 
-Every client sends its calls to https://calendar.lumman.co/mcp, run by Lumman. Signing in runs through the authorisation server that address names. Lumman keeps no copy of your calendars: events are read from Microsoft or Google when a client asks, when a guest opens your booking page or link, when a member of your circle searches, and - where you show busy time in another calendar - by Lumman's own pass that keeps those busy blocks current. The words of every event a client reads - an invitation from a stranger included - are screened for prompt attacks by Google Cloud's Model Armor, and the events are passed on only to the client you approved. A booking link, booking page or poll keeps what it needs to offer times - its meeting's name and length, and for a poll the addresses it is for and their answers until it closes. What the connector passes on, and to whom, is in the privacy policy: https://lumman.co/privacy.
+Every client sends its calls to https://calendar.lumman.co/mcp, run by Lumman. Signing in runs through the authorisation server that address names. Lumman keeps no copy of your calendars: events are read from Microsoft, Google, Apple or the calendar's own server when a client asks, when a guest opens your booking page or link, when a member of your circle searches, and - where you show busy time in another calendar - by Lumman's own pass that keeps those busy blocks current. The words of every event a client reads - an invitation from a stranger included - are screened for prompt attacks by Google Cloud's Model Armor, as are the words of every event a client writes before they reach your calendar, and the events are passed on only to the client you approved. A booking link, booking page or poll keeps what it needs to offer times - its meeting's name and length, and for a poll the addresses it is for and their answers until it closes. What the connector passes on, and to whom, is in the privacy policy: https://lumman.co/privacy.
 
 The meetings skill asks the client to show a meeting and wait for your yes. What the connector itself enforces is each calendar account's permissions, set at https://lumman.co/mcp/account/multi-calendar: with inviting and replying off, no invitation is sent from that account, whatever a client asks. A meeting at a time outside a guest's working day, where their time zone is known, is not sent until the client passes on that you agreed.
 
@@ -132,7 +141,8 @@ The meetings skill asks the client to show a meeting and wait for your yes. What
 - Google shows an event as busy or free alone, and Outlook keeps one reminder per event.
 - A Teams link is made only in a work Microsoft account, a Meet link only in a Google one. Focus time is made only in a Google Workspace account's main calendar.
 - A circle finds time with people who also use Multi Calendar, and sees only when each member is busy, never what their events say.
-- Each account has a daily allowance of tool calls; past it, a call is refused with the time the next one is available.
+- An invitation in an iCloud calendar is answered from its invitation letter or in Apple's own Calendar app. In a calendar connected by its server's password, a meeting's invitations and answers go out only where the server says it sends them itself; elsewhere a meeting with guests is refused.
+- Multi Calendar takes up to 1,000 actions in any 24 hours across all your calendar accounts, whatever the plan; past that, a call is refused with the time the next one is available.
 - An event whose words screen as a prompt attack is withheld rather than passed on, and a call whose screening cannot finish is closed.
 
 ## Evals
