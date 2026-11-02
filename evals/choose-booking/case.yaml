@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: choose-booking
+description: Baseline on the texts before the rewrite, claude-sonnet-5-5 - passed 3 of 3 runs.
+execution:
+  prompt: I am Alex Morgan - give me a page called client-call where my clients can book a 30-minute call with me.
+graders:
+  - name: set the booking page
+    type: tool_used
+    tool: mcp__plugin_multi-calendar_multi-calendar__booking_page_set

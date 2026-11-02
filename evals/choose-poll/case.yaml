@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: choose-poll
+description: Baseline on the texts before the rewrite, claude-sonnet-5-5 - passed 3 of 3 runs.
+execution:
+  prompt: Let Sam (sam@example.com), Priya (priya@example.net) and Lee (lee@example.com) vote on a few times for a team lunch in the week of 18 October 2027.
+graders:
+  - name: made the poll
+    type: tool_used
+    tool: mcp__plugin_multi-calendar_multi-calendar__polls_create

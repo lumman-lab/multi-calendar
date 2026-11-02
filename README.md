@@ -65,7 +65,7 @@ The plugin adds the connector at https://calendar.lumman.co/mcp and the three sk
 
 ### ChatGPT
 
-Needs ChatGPT Pro, Business, Enterprise or Edu. Plus and Free cannot add it.
+Works fully on ChatGPT Business, Enterprise and Edu.
 
 1. Open chatgpt.com/plugins, press +, then Add custom MCP server.
 2. Name it Multi Calendar, paste `https://calendar.lumman.co/mcp`, choose OAuth, tick the box and press Create as a plugin.
@@ -147,9 +147,9 @@ The meetings skill asks the client to show a meeting and wait for your yes. What
 
 ## Evals
 
-`claude plugin eval .` runs three cases, one per skill, against an invented week across an Outlook.com and a Google calendar, answered from fixed mock files under `evals/`.
+`claude plugin eval .` runs three cases, one per skill, and thirteen `choose-*` cases, against an invented week across an Outlook.com and a Google calendar, with an iCloud and a CalDAV account in their own cases, answered from fixed mock files under `evals/`. Each `choose-*` case is a request in a person's own words - what is on, when they are free or available, scheduling, moving, an invitation, a booking page, a poll, an iCloud or a Fastmail calendar - that the connector's tools should take, and three are requests no calendar tool should take. They read the tools' own descriptions, saved in `evals/mocks/multi-calendar/_tools.json`; the mocks carry no server instructions. Run on 2 November 2026 with Claude Code 2.1.308 and model claude-sonnet-5-5, three runs per case: all thirteen passed 3 of 3.
 
-To see what the skills add, every case ran in two setups with the connector's tools in place: once with the plugin as shipped, once with its `skills/` folder removed (`claude plugin eval <copy> --ablation none`). Run on 18 October 2026 with Claude Code 2.1.292, model claude-sonnet-5-5 and claude-sonnet-5-5 as the judge (`--judge-model`), three runs per case each way:
+To see what the skills add, each of the three skill cases ran in two setups with the connector's tools in place: once with the plugin as shipped, once with its `skills/` folder removed (`claude plugin eval <copy> --ablation none`). Run on 18 October 2026 with Claude Code 2.1.292, model claude-sonnet-5-5 and claude-sonnet-5-5 as the judge (`--judge-model`), three runs per case each way:
 
 - free-time - gives Thursday's two free stretches and names the account it could not read: 3 of 3 with the skills, 2 of 3 without.
 - meetings - shows the call as a draft and asks before sending the invitation: 3 of 3 with, 0 of 3 without; without the skills Claude created the event and sent the invitation at once in every run.

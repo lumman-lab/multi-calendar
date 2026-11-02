@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: choose-not-zone
+description: Baseline on the texts before the rewrite, claude-sonnet-5-5 - passed 3 of 3 runs.
+execution:
+  prompt: If it's 3pm in London, what time is it in Tokyo?
+graders:
+  - name: no calendar tool
+    type: regex
+    target: mock_calls
+    pattern: '"tool"'
+    match: not_contains

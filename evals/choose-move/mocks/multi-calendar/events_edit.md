@@ -1,0 +1,1 @@
+{"account":"alex@example.org","provider":"google","calendarId":"alex@example.org","webLink":"https://calendar.google.com/calendar/event?eid=g-board","id":"g-board","timeZone":"Europe/London","now":{"timeZone":"Europe/London","time":"2027-10-17T10:00:00+01:00"},"start":"2027-10-22T09:00:00+01:00","end":"2027-10-22T10:30:00+01:00"}

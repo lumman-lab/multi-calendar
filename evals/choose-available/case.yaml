@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: choose-available
+description: Baseline on the texts before the rewrite, claude-sonnet-5-5 - passed 3 of 3 runs.
+execution:
+  prompt: When are Tom and I both available for dinner next week?
+graders:
+  - name: searched the circle's free time
+    type: tool_used
+    tool: mcp__plugin_multi-calendar_multi-calendar__circles_free_times_find

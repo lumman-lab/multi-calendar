@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: choose-not-timer
+description: Baseline on the texts before the rewrite, claude-sonnet-5-5 - passed 3 of 3 runs.
+execution:
+  prompt: Set a timer for ten minutes.
+graders:
+  - name: no calendar tool
+    type: regex
+    target: mock_calls
+    pattern: '"tool"'
+    match: not_contains

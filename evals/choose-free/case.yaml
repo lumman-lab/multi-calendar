@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: choose-free
+description: Baseline on the texts before the rewrite, claude-sonnet-5-5 - passed 3 of 3 runs.
+execution:
+  prompt: Am I free on Friday afternoon for a coffee?
+graders:
+  - name: searched free time
+    type: tool_used
+    tool: mcp__plugin_multi-calendar_multi-calendar__free_times_find

@@ -1,11 +1,11 @@
 ---
 name: meetings
-description: Set up a meeting with guests in a connected Outlook.com, Hotmail, Microsoft 365 or Google calendar - shown first as a draft, and made, with its invitations sent, only after the person says yes to that draft. Use for any request to book, schedule or set up a meeting or a call with other people, or to invite someone to an event.
+description: Set up a meeting with guests in a connected Outlook.com, Hotmail, Microsoft 365, Google, iCloud or CalDAV calendar - shown first as a draft, and made, with its invitations sent, only after the person says yes to that draft. Use for any request to book, schedule or set up a meeting or a call with other people, or to invite someone to an event.
 ---
 
 # Show the meeting, then send the invitations
 
-An event with guests is sent to every guest, from the person's own address, the moment it is made. Nothing is made until the person has seen the meeting and said yes to it.
+An event with guests is sent to every guest, from the person's own address - an iCloud one from Apple's, under their name - the moment it is made. Nothing is made until the person has seen the meeting and said yes to it.
 
 1. Call `calendars_list` and take the account the person named, by the address it gives. Where more than one account could hold the meeting and the person named none, ask which.
 2. Find the time:

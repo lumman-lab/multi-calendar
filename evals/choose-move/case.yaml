@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: choose-move
+description: Baseline on the texts before the rewrite, claude-sonnet-5-5 - passed 3 of 3 runs.
+execution:
+  prompt: Push board prep on Thursday 21 October 2027 to Friday 22 October at the same time.
+graders:
+  - name: moved the event
+    type: tool_used
+    tool: mcp__plugin_multi-calendar_multi-calendar__events_edit

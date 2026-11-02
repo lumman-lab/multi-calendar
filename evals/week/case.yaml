@@ -1,7 +1,7 @@
 schema_version: "1.1"
 name: week
 execution:
-  prompt: What's on my calendars the week of Monday 19 October?
+  prompt: What's on my calendars the week of Monday 18 October 2027?
   max_turns: 12
   allowed_tools: [Skill]
 graders:
