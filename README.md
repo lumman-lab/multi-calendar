@@ -1,12 +1,12 @@
 # Multi Calendar
 
-Outlook.com, Microsoft 365, Google, iCloud, CalDAV: free time, events, invites, bookings, polls.
+Outlook.com, Microsoft 365, Google, iCloud, Yahoo, AOL, CalDAV: free time, events, bookings, polls.
 
-Multi Calendar is a remote MCP server run by Lumman Ltd. It puts every calendar account you connect - Outlook.com and Hotmail, Microsoft 365, Google, iCloud, Fastmail and other CalDAV calendars, several of each - behind one connector, so an AI client can find time free in all of them in one call, read and change events, answer invitations, and hand out booking links, booking pages and group polls. This repository holds what clients install: the manifests for Claude Code, Cursor, Gemini CLI and Antigravity, three skills and their evals. The server itself is not in it.
+Multi Calendar is a remote MCP server run by Lumman Ltd. It puts every calendar account you connect - Outlook.com and Hotmail, Microsoft 365, Google, iCloud, Yahoo, AOL, Fastmail and other CalDAV calendars, several of each - behind one connector, so an AI client can find time free in all of them in one call, read and change events, answer invitations, and hand out booking links, booking pages and group polls. This repository holds what clients install: the manifests for Claude Code, Cursor, Gemini CLI and Antigravity, three skills and their evals. The server itself is not in it.
 
 ## Before you start
 
-You need a Lumman account with at least one calendar account connected - in the window your AI client opens when it first connects, or at https://lumman.co/mcp/account/multi-calendar. Sign in there with Google, Microsoft, a passkey or an emailed code. Outlook.com, Hotmail and Microsoft 365 calendars connect with Microsoft sign-in, Google calendars with Google sign-in, iCloud calendars with an app-specific password made at Apple, and Fastmail and other CalDAV calendars with their address and a password. Each calendar account's permissions - seeing events, changing events, and inviting and replying - are set on the same page, and your time zone, working hours and other scheduling preferences on its Scheduling page, https://lumman.co/mcp/account/multi-calendar/scheduling.
+You need a Lumman account with at least one calendar account connected - in the window your AI client opens when it first connects, or at https://lumman.co/mcp/account/multi-calendar. Sign in there with Google, Microsoft, a passkey or an emailed code. Outlook.com, Hotmail and Microsoft 365 calendars connect with Microsoft sign-in, Google calendars with Google sign-in, iCloud calendars with an app-specific password made at Apple, Yahoo and AOL calendars with an app password made at Yahoo or AOL, and Fastmail and other CalDAV calendars with their address and a password. Each calendar account's permissions - seeing events, changing events, and inviting and replying - are set on the same page, and your time zone, working hours and other scheduling preferences on its Scheduling page, https://lumman.co/mcp/account/multi-calendar/scheduling.
 
 ## Add it to your client
 

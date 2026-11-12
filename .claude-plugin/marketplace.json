@@ -11,7 +11,7 @@
     {
       "name": "multi-calendar",
       "source": "./",
-      "description": "Outlook.com, Microsoft 365, Google, iCloud, CalDAV: free time, events, invites, bookings, polls."
+      "description": "Outlook.com, Microsoft 365, Google, iCloud, Yahoo, AOL, CalDAV: free time, events, bookings, polls."
     }
   ]
 }

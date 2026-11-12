@@ -1,14 +1,14 @@
 {
   "name": "multi-calendar",
   "displayName": "Multi Calendar",
-  "version": "1.1.5",
-  "description": "Outlook.com, Microsoft 365, Google, iCloud, CalDAV: free time, events, invites, bookings, polls.",
+  "version": "1.1.6",
+  "description": "Outlook.com, Microsoft 365, Google, iCloud, Yahoo, AOL, CalDAV: free time, events, bookings, polls.",
   "author": {
     "name": "Lumman"
   },
   "homepage": "https://lumman.co/mcp/multi-calendar",
   "repository": "https://github.com/lumman-lab/multi-calendar",
   "license": "MIT",
-  "keywords": ["calendar", "outlook", "hotmail", "microsoft-365", "google-calendar", "icloud", "caldav", "scheduling"],
+  "keywords": ["calendar", "outlook", "hotmail", "microsoft-365", "google-calendar", "icloud", "yahoo", "aol", "caldav", "scheduling"],
   "logo": ".claude-plugin/icon.png"
 }
