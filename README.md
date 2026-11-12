@@ -142,7 +142,7 @@ The meetings skill asks the client to show a meeting and wait for your yes. What
 - A Teams link is made only in a work Microsoft account, a Meet link only in a Google one. Focus time is made only in a Google Workspace account's main calendar.
 - A circle finds time with people who also use Multi Calendar, and sees only when each member is busy, never what their events say.
 - An invitation in an iCloud calendar is answered from its invitation letter or in Apple's own Calendar app. In a calendar connected by its server's password, a meeting's invitations and answers go out only where the server says it sends them itself; elsewhere a meeting with guests is refused.
-- Multi Calendar takes up to 1,000 actions in any 24 hours across all your calendar accounts, whatever the plan; past that, a call is refused with the time the next one is available.
+- Multi Calendar has one ceiling on actions in any 24 hours across all your calendar accounts, the same whatever the plan; past it, a call is refused with the time the next one is available.
 - An event whose words screen as a prompt attack is withheld rather than passed on, and a call whose screening cannot finish is closed.
 
 ## Evals

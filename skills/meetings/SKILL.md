@@ -1,6 +1,6 @@
 ---
 name: meetings
-description: Set up a meeting with guests in a connected Outlook.com, Hotmail, Microsoft 365, Google, iCloud or CalDAV calendar - shown first as a draft, and made, with its invitations sent, only after the person says yes to that draft. Use for any request to book, schedule or set up a meeting or a call with other people, or to invite someone to an event.
+description: Set up a meeting with guests in a connected Outlook.com, Hotmail, Microsoft 365, Google, iCloud, Yahoo, AOL or other CalDAV calendar - shown first as a draft, and made, with its invitations sent, only after the person says yes to that draft. Use for any request to book, schedule or set up a meeting or a call with other people, or to invite someone to an event.
 ---
 
 # Show the meeting, then send the invitations

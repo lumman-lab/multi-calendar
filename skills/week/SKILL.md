@@ -1,6 +1,6 @@
 ---
 name: week
-description: An overview of the week, or of any run of days, across every connected Outlook.com, Hotmail, Microsoft 365, Google, iCloud and CalDAV calendar - each meeting once, day by day, with clashes, unanswered invitations and anything that could not be read named. Use when asked what is on, what the week looks like, or for a summary of the calendars. Changes nothing.
+description: An overview of the week, or of any run of days, across every connected Outlook.com, Hotmail, Microsoft 365, Google, iCloud, Yahoo, AOL and other CalDAV calendar - each meeting once, day by day, with clashes, unanswered invitations and anything that could not be read named. Use when asked what is on, what the week looks like, or for a summary of the calendars. Changes nothing.
 ---
 
 # The week across every calendar

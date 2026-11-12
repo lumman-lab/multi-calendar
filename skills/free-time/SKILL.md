@@ -1,6 +1,6 @@
 ---
 name: free-time
-description: Find when the person is free across every connected Outlook.com, Hotmail, Microsoft 365, Google, iCloud and CalDAV calendar at once, within their working hours and scheduling preferences - or when everyone in one of their circles is. Use when asked when they are free, for a time to meet, or whether a day has room. Books nothing.
+description: Find when the person is free across every connected Outlook.com, Hotmail, Microsoft 365, Google, iCloud, Yahoo, AOL and other CalDAV calendar at once, within their working hours and scheduling preferences - or when everyone in one of their circles is. Use when asked when they are free, for a time to meet, or whether a day has room. Books nothing.
 ---
 
 # Free time across every calendar
